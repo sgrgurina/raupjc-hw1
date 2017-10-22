@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace GenericList
 {
-    internal class GenericListEnumerator<T> : IEnumerator<T> where T : IComparable
+    internal class GenericListEnumerator<T> : IEnumerator<T>
     {
         private readonly GenericList<T> genericList;
         private int currentIndex=-1;

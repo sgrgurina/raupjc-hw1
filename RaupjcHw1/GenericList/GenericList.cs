@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace GenericList
 {
-    class GenericList<X> : IGenericList<X> where X : IComparable
+    public class GenericList<X> : IGenericList<X>
     {
         public int Count { get; private set; }
 
@@ -80,7 +80,7 @@ namespace GenericList
 
             for (int i = 0; i < Count; i++)
             {
-                if (internalStorage[i].CompareTo(item) == 0)
+                if (internalStorage[i].Equals(item))
                 {
                     index = i;
                     break;
@@ -100,7 +100,7 @@ namespace GenericList
         {
             for (int i = 0; i < Count; i++)
             {
-                if (internalStorage[i].CompareTo(item) == 0)
+                if (internalStorage[i].Equals(item))
                 {
                     return true;
                 }
