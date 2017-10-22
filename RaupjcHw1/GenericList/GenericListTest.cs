@@ -37,10 +37,16 @@ namespace GenericList
             Console.WriteLine(listOfDoubles.Count); // 4
             Console.WriteLine(listOfDoubles.Remove(100)); // false
             Console.WriteLine(listOfDoubles.RemoveAt(5)); // false
+
+            foreach (double el in listOfDoubles)
+            {
+                Console.WriteLine(el);
+            }
+
             listOfDoubles.Clear(); // []
             Console.WriteLine(listOfDoubles.Count); // 0
-            Console.Read();
         }
+
 
         static void Main(string[] args)
         {
@@ -51,6 +57,8 @@ namespace GenericList
 
             GenericList<double> doubleList = new GenericList<double>(5);
             ListExampleDouble(doubleList);
+
+            Console.Read();
 
         }
     }

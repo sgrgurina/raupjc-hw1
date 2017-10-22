@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EnumeratorTest.cs" />
     <Compile Include="GenericList.cs" />
+    <Compile Include="GenericListEnumerator.cs" />
     <Compile Include="IGenericList.cs" />
     <Compile Include="GenericListTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
